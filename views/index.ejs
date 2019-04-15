@@ -6,9 +6,11 @@
 <body>
 	<h1>Index Page</h1>
 		<ul>
-			<li>Random</li>
 			<% for (let i = 0; i < Pizzas.length; i++) {%>
 				<li><%=Pizzas[i].name%></li>
+				<form action="/pizzas/<%=i%>?_method=DELETE" method="post">
+					<button type="submit">Delete</button>
+				</form>
 			<%}%>
 		</ul>
 
