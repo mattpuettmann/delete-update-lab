@@ -12,13 +12,16 @@ app.get('/pizzas', (req, res) => {
 	})
 });
 
+app.get('/pizzas/:id/edit', (req, res) => {
+	res.render('edit.ejs', {pizzas: Pizzas[req.params.id]});
+});
+
 app.delete('/pizzas/:id', (req, res) => {
 	Pizzas.splice(req.params.id, 1);
 	res.redirect('/pizzas');
-
-
-	// res.send('delete route works');
 });
+
+
 
 
 

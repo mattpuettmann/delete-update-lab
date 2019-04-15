@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Edit Route</h1>
+	<form action="" method="">
+		Name: <input type="text" name="name" value="<%=pizzas.name%>"><br/> 
+		Ready To Eat?: <input type="checkbox" name="isReady"
+			<% if (pizzas.isReady === true) {%>
+				checked
+		<%}%>
+		><br/>
+		Image: <input type="text" name="image" value="<%=pizzas.image%>"><br/>
+	</form>
+
+</body>
+</html>
