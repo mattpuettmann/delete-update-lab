@@ -5,7 +5,7 @@
 </head>
 <body>
 	<h1>Edit Route</h1>
-	<form action="" method="">
+	<form action="/pizzas/<%=id%>?_method=PUT" method="post">
 		Name: <input type="text" name="name" value="<%=pizzas.name%>"><br/> 
 		Ready To Eat?: <input type="checkbox" name="isReady"
 			<% if (pizzas.isReady === true) {%>
@@ -13,6 +13,7 @@
 		<%}%>
 		><br/>
 		Image: <input type="text" name="image" value="<%=pizzas.image%>"><br/>
+		<button type="submit">Submit</button>
 	</form>
 
 </body>
