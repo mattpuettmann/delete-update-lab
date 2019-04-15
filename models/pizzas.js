@@ -15,3 +15,5 @@ const Pizzas = [
 		image: 'https://www.tasteofhome.com/wp-content/uploads/2017/10/exps25356_TH10603D13.jpg'
 	}
 ]
+
+module.exports = Pizzas
